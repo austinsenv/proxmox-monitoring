@@ -18,11 +18,15 @@ services:
     networks:
       - monitoring_network
     volumes:
-      - influxdb-volume:/var/lib/influxdb
+      - influxdb-data-volume:/var/lib/influxdb2
+      - influxdb-config-volume:/etc/influxdb2
 networks:
   monitoring_network:
+    external: true
 volumes:
   grafana-volume:
     external: true
-  influxdb-volume:
+  influxdb-data-volume:
+    external: true
+  influxdb-config-volume:
     external: true
