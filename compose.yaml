@@ -1,6 +1,6 @@
 services:
   grafana:
-    image: grafana/grafana:11.1.2
+    image: grafana/grafana:latest
     container_name: grafana_container
     restart: unless-stopped
     ports:
