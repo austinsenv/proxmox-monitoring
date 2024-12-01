@@ -22,11 +22,11 @@ services:
       - influxdb-config-volume:/etc/influxdb2
 networks:
   monitoring_network:
-    external: true
+    driver: local
 volumes:
   grafana-volume:
-    external: true
+    driver: local
   influxdb-data-volume:
-    external: true
+    driver: local
   influxdb-config-volume:
-    external: true
+    driver: local

@@ -1,12 +1,4 @@
 # Bringing up the docker compose stack
----
-Before starting the compose stack, create the docker volumes and network:
-```
-docker volume create grafana-volume
-docker volume create influxdb-volume
-
-docker network create monitoring_network
-```
 
 To bring the stack up in a detached state use `docker compose up -d`
 
