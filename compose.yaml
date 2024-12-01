@@ -22,7 +22,7 @@ services:
       - influxdb-config-volume:/etc/influxdb2
 networks:
   monitoring_network:
-    driver: local
+    driver: bridge
 volumes:
   grafana-volume:
     driver: local
