@@ -30,3 +30,4 @@ volumes:
     driver: local
   influxdb-config-volume:
     driver: local
+
